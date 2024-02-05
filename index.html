@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Entry Form</title>
+</head>
+<body>
+    <center>
+        <h1>
+            <b><i>Registration Form</i></b>
+        </h1>
+    </center>
+    <form>
+        <p>
+            <label for="picture"><b>Upload your Picture:</b></label>
+            <br>
+            <input type="file" id="picture" required>
+        </p>
+        <p>
+            <label for="firstname"><b>First Name:</b></label>
+            <br>
+            <input id="firstname" type="text" placeholder="Enter First Name" minlength="3" maxlength="20" required>
+        </p>
+        <p>
+            <label for="objective"><b>Objective:</b></label>
+            <br>
+            <textarea name="objective" id="objective" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="lastname"><b>Last Name:</b></label>
+            <br>
+            <input type="text" id="lastname" placeholder="Enter Last Name" minlength="3" maxlength="10" required>
+        </p>
+        <p>
+            <label for="fathername"><b>Father Name:</b></label>
+            <br>
+            <input type="text" id="fathername" placeholder="Enter Father Name" minlength="3" maxlength="25" required>
+        </p>
+        <p>
+            <label for="male"><b>Gender:</b></label>
+            <input type="radio" id="male" name="gender" value="Male" checked><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+        </p>
+        <p>
+            <label for="Islam"><b>Religion:</b></label>
+            <br>
+            <input type="radio" id="Islam" name="religion" value="Islam" checked><label for="Islam">Islam</label>
+            <input type="radio" id="others" name="religion" value="Others"><label for="others">Others</label>
+        </p>
+        <p>
+            <label for="domicile"><b>Domicile:</b></label>
+            <br>
+            <select name="" id="domicile" required size="02">
+                <option value="">Please Select</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Balochistan">Balochistan</option>
+                <option value="Sindh">Sindh</option>
+                <option value="KPK">KPK</option>
+            </select>
+        </p>    
+        <p>
+            <label for="placeofbirth"><b>Place of Birth:</b></label>
+            <br>
+            <select name="" id="placeofbirth" required>
+                <option value="">Please Select</option>
+                <option value="Karachi" selected>Karachi</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+            </select>
+        </p>
+        <p>
+            <label for="dob"><b>Date of Birth:</b></label>
+            <br>
+            <input type="date" id="dob" placeholder="Select Date of Birth" required>
+        </p>
+        <p>
+            <label for="email"><b>E-Mail:</b></label>
+            <br>
+            <input type="email" id="email" placeholder="Enter e-mail" required>
+        </p>
+        <p>
+            <label for="mobilenumber"><b>Mobile Number:</b></label>
+            <br>
+            <select name="" id="mobilenumber" required>
+                <option value="">Select Code</option>
+                <option value="0300">0300</option>
+                <option value="0301">0301</option>
+                <option value="0302">0302</option>
+                <option value="0303">0303</option>
+                <option value="0304">0304</option>
+                <option value="0305">0305</option>
+            </select>
+            <input type="number" id="mobilenumber" placeholder="Enter Mobile Number" maxlength="11" required>
+        </p>
+        <p>
+            <label for="cv"><b>Upload Your CV:</b></label>
+            <br>
+            <input type="file" id="cv" required>
+        </p>
+        <p>
+            <center>
+                <button>SUBMIT</button>
+            </center>
+        </p>
+    </form>
+</body>
+</html>
